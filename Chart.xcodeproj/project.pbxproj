@@ -12,6 +12,9 @@
 		10BFB1821EA1A74E00359069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BFB1801EA1A74E00359069 /* Main.storyboard */; };
 		10BFB1841EA1A74E00359069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BFB1831EA1A74E00359069 /* Assets.xcassets */; };
 		10BFB1871EA1A74E00359069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BFB1851EA1A74E00359069 /* LaunchScreen.storyboard */; };
+		10BFB18F1EA1A9E500359069 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 10BFB18E1EA1A9E500359069 /* data.json */; };
+		10BFB1911EA1AA3300359069 /* ChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFB1901EA1AA3300359069 /* ChartDataModel.swift */; };
+		80D0043FFB13E08F79DD9A7D /* Pods_Chart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0175802E33DA9DAFB6686C8 /* Pods_Chart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		10BFB1831EA1A74E00359069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BFB1861EA1A74E00359069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BFB1881EA1A74E00359069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BFB18E1EA1A9E500359069 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		10BFB1901EA1AA3300359069 /* ChartDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDataModel.swift; sourceTree = "<group>"; };
+		48A18A7CAC0740FF7C34D746 /* Pods-Chart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chart/Pods-Chart.release.xcconfig"; sourceTree = "<group>"; };
+		B0175802E33DA9DAFB6686C8 /* Pods_Chart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4678DA1D03CC1C2D2A44546 /* Pods-Chart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chart/Pods-Chart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D0043FFB13E08F79DD9A7D /* Pods_Chart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				10BFB17B1EA1A74E00359069 /* Chart */,
 				10BFB17A1EA1A74E00359069 /* Products */,
+				F343CEFEE879D7302D617F08 /* Pods */,
+				434E5B501A75962798404610 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				10BFB17C1EA1A74E00359069 /* AppDelegate.swift */,
+				10BFB18E1EA1A9E500359069 /* data.json */,
 				10BFB17E1EA1A74E00359069 /* ViewController.swift */,
+				10BFB1901EA1AA3300359069 /* ChartDataModel.swift */,
 				10BFB1801EA1A74E00359069 /* Main.storyboard */,
 				10BFB1831EA1A74E00359069 /* Assets.xcassets */,
 				10BFB1851EA1A74E00359069 /* LaunchScreen.storyboard */,
 				10BFB1881EA1A74E00359069 /* Info.plist */,
 			);
 			path = Chart;
+			sourceTree = "<group>";
+		};
+		434E5B501A75962798404610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0175802E33DA9DAFB6686C8 /* Pods_Chart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F343CEFEE879D7302D617F08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4678DA1D03CC1C2D2A44546 /* Pods-Chart.debug.xcconfig */,
+				48A18A7CAC0740FF7C34D746 /* Pods-Chart.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BFB18B1EA1A74E00359069 /* Build configuration list for PBXNativeTarget "Chart" */;
 			buildPhases = (
+				8A750D50FBAEED4D10C5A9A1 /* [CP] Check Pods Manifest.lock */,
 				10BFB1751EA1A74E00359069 /* Sources */,
 				10BFB1761EA1A74E00359069 /* Frameworks */,
 				10BFB1771EA1A74E00359069 /* Resources */,
+				D04631B825828A2281AAE9C9 /* [CP] Embed Pods Frameworks */,
+				BA150716433106ABB3EA875A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +129,7 @@
 				TargetAttributes = {
 					10BFB1781EA1A74E00359069 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 6YE2PVF6Q4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,16 +160,66 @@
 				10BFB1871EA1A74E00359069 /* LaunchScreen.storyboard in Resources */,
 				10BFB1841EA1A74E00359069 /* Assets.xcassets in Resources */,
 				10BFB1821EA1A74E00359069 /* Main.storyboard in Resources */,
+				10BFB18F1EA1A9E500359069 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A750D50FBAEED4D10C5A9A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA150716433106ABB3EA875A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chart/Pods-Chart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D04631B825828A2281AAE9C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chart/Pods-Chart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10BFB1751EA1A74E00359069 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BFB1911EA1AA3300359069 /* ChartDataModel.swift in Sources */,
 				10BFB17F1EA1A74E00359069 /* ViewController.swift in Sources */,
 				10BFB17D1EA1A74E00359069 /* AppDelegate.swift in Sources */,
 			);
@@ -260,8 +344,10 @@
 		};
 		10BFB18C1EA1A74E00359069 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4678DA1D03CC1C2D2A44546 /* Pods-Chart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YE2PVF6Q4;
 				INFOPLIST_FILE = Chart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ted.Chart;
@@ -272,8 +358,10 @@
 		};
 		10BFB18D1EA1A74E00359069 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A18A7CAC0740FF7C34D746 /* Pods-Chart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YE2PVF6Q4;
 				INFOPLIST_FILE = Chart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ted.Chart;
@@ -301,6 +389,7 @@
 				10BFB18D1EA1A74E00359069 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

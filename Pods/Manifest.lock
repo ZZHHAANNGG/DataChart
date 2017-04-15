@@ -1,0 +1,23 @@
+PODS:
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - EasyPeasy (1.4.2)
+  - Gloss (1.2.4)
+  - SWXMLHash (3.0.4)
+
+DEPENDENCIES:
+  - Charts
+  - EasyPeasy
+  - Gloss
+  - SWXMLHash
+
+SPEC CHECKSUMS:
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  EasyPeasy: 50e7130b61f495ce105796e438d4136e2c8d2cc0
+  Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
+  SWXMLHash: 29d20b84692fc319ea8ed933058fe7d8d005139b
+
+PODFILE CHECKSUM: bbccfb4ad325a0f8092bd792708502d47ee88fdd
+
+COCOAPODS: 1.2.0
