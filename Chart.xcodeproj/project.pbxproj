@@ -129,7 +129,6 @@
 				TargetAttributes = {
 					10BFB1781EA1A74E00359069 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 6YE2PVF6Q4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -347,7 +346,7 @@
 			baseConfigurationReference = F4678DA1D03CC1C2D2A44546 /* Pods-Chart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6YE2PVF6Q4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Chart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ted.Chart;
@@ -361,7 +360,7 @@
 			baseConfigurationReference = 48A18A7CAC0740FF7C34D746 /* Pods-Chart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6YE2PVF6Q4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Chart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ted.Chart;
